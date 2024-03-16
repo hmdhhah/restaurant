@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="restaurant.css" type="text/css" rel="stylesheet" />
+    <script src="restaurant.js"></script>
+  </head>
+
+  <body>
+    <div class="root">
+      <div class="body">
+        <div class="heading">
+          <h1>Restaurants</h1>
+        </div>
+        <div class="box">
+          <img src="image/dinner1.jpeg" width="150px" height="150px" />
+          <div class="details">
+            <h2 class="name">La-Vida Ballhous</h2>
+            <div class="subdetails">
+              <img
+                id="icon-location"
+                src="image/icon-location.png"
+                width="35px"
+                height="35px"
+              />
+              <p id="sub">
+                883 E Rosshaven, Jasmine Underpass BC V6A 167 ,Canada
+              </p>
+            </div>
+            <div class="subdetails1">
+              <img
+                id="time-icon"
+                src="image/icon-time1.png"
+                width="55px"
+                height="55px"
+              />
+
+              <p id="sub1"><strong>Open Now </strong> -Closes at 11:30 PM</p>
+            </div>
+          </div>
+        </div>
+        <div class="second">
+        <div class="peopl">
+          <div class="people">
+            <img
+              id="icon-people"
+              src="image/icon-people.jpeg"
+              width="35px"
+              height="35px"
+            />
+            <p id="text-people"> 1 People</p>
+            <button id="toggle" onclick="myfunction()">
+              <span class="arrow up"></span>
+            </button>
+          </div>
+          <div class="divider1" >
+          
+          </div>        
+        </div>
+        <div id="nopeople">
+          <div class="no-people">
+            <button class="zero" style="background-color: #ccae17;" onclick="fchangevalue(1) " value="1">01</button>
+            <button class="zero"onclick="fchangevalue(2) " value="2">02</button>
+            <button class="zero" onclick="fchangevalue(3)" value="3"> 03</button>
+            <button class="zero" onclick="fchangevalue(4)" value="4">04</button>
+            <button class="zero" onclick="fchangevalue(5)" value="5">05</button>
+            <button class="zero" onclick="fchangevalue(6)" value="6">06</button>
+            <button class="zero"onclick="fchangevalue(7)" value="7">07</button>
+            <button class="zero" onclick="fchangevalue(8)" value="8">08</button>
+            <button class="zero" onclick="fchangevalue(9)" value="9">09</button>
+            <button class="zero"onclick="fchangevalue(10)" value="10">10</button>
+            <button class="zero" onclick="fchangevalue(11)" value="11">11</button>
+            <button class="zero" onclick="fchangevalue(12)" value="12">12</button>
+            <button class="zero" onclick="fchangevalue(13)" value="13">13</button>
+            <button class="zero" onclick="fchangevalue(14)" value="14">14</button>
+            <button class="zero" onclick="fchangevalue(15)" value="15">15</button>
+            <button class="zero"onclick="fchangevalue(16)" value="16">16</button>
+            <button class="zero" onclick="fchangevalue(17) " value="17">17</button>
+            <button class="zero"onclick="fchangevalue(18) "  value="18">18</button>
+            <button class="zero" onclick="fchangevalue(19) " value="19">19</button>
+            <button class="zero" onclick="fchangevalue(20) " value="20">20</button>
+          </div>
+          <div class="question">
+            <a href="something"> More than 20 people? </a>
+          </div>
+        </div>
+
+        <div class="time">
+          <img src="image/icon-time.png" width="20px" height="20px" />
+          <p>Choose a time:</p>
+        </div>
+        <div class="divider">
+
+        </div>
+        <div class="times">
+          <button class="btn" style="background-color: #ccae17;" value="8:00pm">8:00pm</button>
+          <button class="btn" value="8:30pm" >8:30pm</button> 
+          <button class="btn" value="9:00pm">9:00pm</button>
+          <button class="btn" value="9:30pm">9:30pm</button>
+        </div>
+     
+
+        <div class="reserve">
+          <button onclick="confirmpge()">Reserve a Table </button>
+        </div>
+      </div>
+      <div class="confirmation">
+        Your Reservation for <span id="usernumber">1 People</span>
+         has been confirmed for 
+        <span id="currentday">current day</span> at 
+        <span id="userselectedtime">8:00pm</span>. See you then!
+        <div class="bttn"><button onclick="cancelReservation()">Cancel Reservation</button></div>
+    </div>
+
+      
+      </div>
+    </div>
+  </body> 
+</html>
+
+
